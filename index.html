@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ro">
+  
+  <head>
+    <title>Immobiliare RBD</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+  </head>
+
+  <body>
+
+    <!-- navigation bar -->
+    <div class="navbar">
+      <!-- first navigation bar -->
+      <div class="navbar1">
+	<a href="https://google.com">
+	  <img class="icon" src="romania-icon.png" alt="ro">
+	  <span class="text">RO</span>
+	</a>
+	<a href="https://google.com">
+	  <img class="icon" src="us-icon.png" alt="us">
+	  <span class="text">US</span>
+	</a>
+	<a href="tel:0249514366">
+	  <img class="icon" src="phone-icon.png" alt="phone">
+	  <span class="text">0249514366</span>
+	</a>
+	<a href="mailto:office@rbd.ro">
+	  <img class="icon" src="mail-icon.png" alt="mail">
+	  <span class="text">office@rbd.ro</span>
+	</a>
+      </div>
+
+      <!-- second navigation bar (menu) -->
+      <div class="navbar2">
+	<a class="selected" href="index.html">Prima Pagina</a>
+	<a href="echipa.html">ECHIPA</a>
+	<div class="dropdown">
+	  <button class="dropbtn">
+	    VANZARI
+	  </button>
+	  <div class="dropdown-content">
+	    <a href="apartamente_vanzare.html">Apartamente de Vanzare Bucuresti</a>
+	    <a href="case_vanzare.html">Case de Vanzare Bucuresti</a>
+	  </div>
+	</div> 
+	<div class="dropdown">
+	  <button class="dropbtn">
+	    INCHIRIERI
+	  </button>
+	  <div class="dropdown-content">
+	    <a href="apartamente_inchiriat.html">Apartamente de inchiriat Bucuresti</a>
+	    <a href="case_inchiriat.html">Case de inchiriat Bucuresti</a>
+	    <a href="spatii_inchiriat.html">Spatii de inchiriat</a>
+	  </div>
+	</div> 
+	<a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+	<div class="numbertext">1 / 4</div>
+	<img src="home.jpeg" style="width:100%">
+	<div class="textslide">Home</div>
+      </div>
+
+      <div class="mySlides fade">
+	<div class="numbertext">2 / 4</div>
+	<img src="interior2.jpeg" style="width:100%">
+	<div class="textslide">Interior 2</div>
+      </div>
+
+      <div class="mySlides fade">
+	<div class="numbertext">3 / 4</div>
+	<img src="interior1.jpeg" style="width:100%">
+	<div class="textslide">Interior 1</div>
+      </div>
+
+      <div class="mySlides fade">
+	<div class="numbertext">4 / 4</div>
+	<img src="interior4.jpeg" style="width:100%">
+	<div class="textslide">Interior 4</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>    
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+	  showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+	  showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+    <!-- body of the document -->
+    <div class="body">
+    
+      <p class="text">
+	RBD - definiţia tranzacţiilor imobiliare de succes
+      </p>
+      <p class="text">
+Ce asigura în fond succesul unei tranzacţii imobiliare? V-aţi întrebat asta? În teorie lucrurile sunt simple: o proprietate, un contract, o semnătură. Un happy-end imobiliar.
+      </p>
+      <p class="text">
+Da, suntem toţi conştienţi că asta implică nişte paşi adiacenţi. Ba chiar suntem de multe ori gata să ni-i asumăm, fiind convinşi că dispunem de timpul, energia şi competenţele necesare să ducem la bun sfârşit acest demers.
+      </p>
+      <p class="text">
+      Dacă te afli în căutarea unei reşedinţe eşti pregătit pentru liste întregi de anunţuri, convorbiri telefonice şi vizionari. De partea celalată, ca vânzător, ai încredere că detaliile oferite de tine, fotografiile imobilului, proprietatea în sine, îţi vor oferi vizibilitatea pe care o vrei şi deci finalizarea ,,cu succes” a tranzacţiei. Aparent, tot procesul de vânzare, cumpărare sau închiriere se rezumă la finalizarea lui şi deci atingerea obiectivului. Dar cum îi definim succesul? Chiar şi în cazul în care considerăm documentarea, verificarea, întocmirea documentelor ca fiind pentu noi „costuri” suplimentare de timp şi energie, şi 	apelăm la serviciile unei agenţii imobiliare, la ce se rezumă reuşita noastră?
+      </p>
+      <p class="text">
+Într-un mediu imobiliar dinamic şi vast, cum este municipiul Bucureşti, unde, în sectorul rezidenţial, ofertele potrivite „se ascund” în mii de anunţuri, ce face diferenţa între o tranzacţie reuşită şi una de succes?
+      </p>
+      <p class="text">
+Răspunsul pe scurt ar fi experienţa în sine, drumul parcurs de la intenţie la finalizarea tranzacţiei. Şi pentru că asta diferă în funcţie de criteriile şi nevoile fiecăruia, soluţia o reprezintă un serviciu dedicat ţie, o abordare personalizată, o agenţie care să-ţi reprezinte interesul înainte de toate.
+      </p>
+      <p class="text">
+Expereinţa, profesionalismul, onestitatea şi calitatea incontesabilă a serviciilor sunt ceea ce fac diferenţa între o simplă agenţie imbobiliară şi un partener devotat, dedicat ţie.
+      </p>
+      <p class="text">
+Otho este un astfel de partener. Un colaborator de încredere, mai mult decât o agenţie imobiliară Bucureşti, un expert în domeniu, pregătit să susţină întodeauna nevoile şi interesul clientului său. Renunţând la tipare, excelând la capitolul profesionalism şi valorificând experianta dobândită în domeniul imobiliar şi nu numai, agenţia tranzacţionează case, penthouse-uri, vile şi apartamente de lux în zone de interes din capitală, precum vecinătatea parcurilor Herăstrău şi Kiseleff, cartierele Floreasca, Dorobanţi, Aviaţiei, Şoseaua Nordului, Victoriei, Domenii, Bucureştii Noi sau Pipera.
+      </p>
+      <p class="text">
+Garanţia unei tranzacţii imobiliare sigure, în cel mai scurt timp, în cele mai bune condiţii şi la cea mai bună valoare, reprezintă o carte de vizită asumată şi întotdeauna respectată de către echipa Otho.
+      </p>
+      <p class="text">
+Membrii echipei, dedicaţi şi perseverenţi, îţi vor oferi o analiză de piaţă competentă şi un plan personalizat de acţiune, punându-ţi la dispoziţie toate cunoştinţele tehnice, financiare şi juridice de care ai nevoie, ocupându-se inclusiv de întocmirea documentelor necesare tranzacţiei.
+      </p>
+      <p class="text">
+Constant informat despre activitatea pieţei imobilare, preţurile concurente sau ofertele de interes, vei descoperi definiţia respectului faţă de client şi cea a unei tranzacţii imobiliare de succes alături de echipa Otho Estate.
+Iti doresti o casa noua? Apeleaza la o agentie imobiliara!
+      </p>
+      <p class="text">
+    Angajatul unei agentii imobiliare te va ajuta sa gasesti mai repede casa dorita.
+    Un agent imobiliar, cu care vei incheia un contract prealabil, va cauta pentru tine toate ofertele  imobiliare existente pe piata, la momentul actual, respectand dorintele tale.
+    De asemenea, iti pune la dispozitie toate alternativele si solutiile, de care dispune, pentru a te ajuta sa gasesti casa cea mai potivita pentru tine.
+    In momentul in care apelezi la serviciile unui broker imobiliar trebuie sa respecti termenii prevazuti in contract, unde este prevazut si comisionul care ii revine agentului, daca vanzarea se va finaliza.
+    Apeland la o agentie imobiliara vei avea garantia sigurantei locuintei pe care o vei cumpara, iar ea va intermedia vanzarea intre tine si vanzator si va negocia pentru tine cel mai bun pret.
+      </p>
+      <p class="text">
+De ce sa apelezi la serviciile unei agentii imobiliare in Bucuresti
+      </p>
+      <p class="text">
+Vrei sa te muti in capitala si nu stii la cine sa apelezi pentru cautarea unei locuinte? O agentie imobiliara din Bucuresti te va ajuta sa gasesti ceea ce cauti.  Alege-o pe cea mai buna. Iata de ce:
+      </p>
+      <p class="text">
+    Are experienta in zona in care esti strict interesat
+    Cauta cea mai potrivita optiune pentru tine
+    Uneori are in portofoliu mii de proprietati si vei avea de unde alege
+    Agentul imobiliar iti va oferi consultanta de specialitate si te va insoti la vizionari indiferent daca este peste program sau in weekend
+    Iti va oferi informatii si sfaturi utile, tinand cont de facilitatile zonei de interes si va scurta perioada de cautare
+    O agentie imobiliara din Bucuresti se va asigura ca intocmirea contractului de Vanzare-Cumparare la notariat s-a incheiat in deplina siguranta.
+      </p>
+      <p class="text">
+Vinzi sau cumperi o casa in Bucuresti dar nu stii cum sa rezolvi problema mai repede? Apeleaza la o agentie imobiliara din Bucuresti.
+      </p>
+      <p class="text">
+    Daca vinzi un imobil in Bucuresti, poti incheia un contract de reprezentare exclusiva cu o agentie imobiliara iar aceasta va avea exclusivitate in vanzarea bunului tau imobil.
+     Un broker imobiliar din Bucuresti  poate fi si evaluator. Prin prisma experientei, iti poate spune care este cel mai potrivit pret cu care sa scoti imobilul pe piata, pentru a-l vinde mai  usor.  De asemenea, iti poate garanta vanzarea mai rapida a imobilului tau, daca se ocupa exclusiv de acest proiect.
+    O agentie imobiliara din Bucuresti te va ajuta sa nu mai pierzi timp inutil, la intalniri, cu clientii si va negocia in numele tau.
+      </p>
+      <p class="text">
+Apeleaza la o agentie imobiliara din sectorul 1 Bucuresti
+      <p class="text">
+    Misiunea unei agentii imobiliare din Bucuresti sectorul 1 este sa ofere clientilor sai, cumparatori sau vanzatori, toate resursele si informatiile necesare, pentru ca potentialul cumparator sau vanzator sa faca cea mai buna tranzactie de pe piata.
+    Daca esti interest sa faci o tranzactie in acesta zona, expertii imobiliari de aici sunt cei care cunosc foarte bine zona si  sunt in tema cu cele mai bune oferte de pe piata.
+    O agentie imobiliara din sectorul 1 ii va asigura clientului sau informatii corecte si complete despre un anumit imobil, pentru ca tranzactia sa fie un real succes pentru toti cei implicati.
+    Un expert in domeniu stie care sunt trendurile, va studia si va actualiza tot timpul ofertele de pe piata, mulandu-se dupa nevoile fiecaruia.
+      </p>
+      <p class="text">
+Vinzi sau cumperi in sectorul 2 ? Ai nevoie de o agentie imobiliare specializata in tranzactii pentru sectorul 2
+      </p>
+      <p class="text">
+    Vanzarea, cumpararea sau inchirierea unui imobil, in capitala, poate fi un proces complicat si greu de finalizat uneori. De aceea, nenumarate agentii imobiliare din sectorul 2 Bucuresti iti stau la dispozitie cu oferte actuale si sigure.
+    Solicitarea ajutorului unei agentii imobiliare in sectorul 2 Bucuresti te poate scuti de nenumarate neplaceri cum ar fi: timp pierdut in cautarea clientilor si la vizionari cu potentialul client, negocierea la un pret nerealist comparativ cu cel al pietei si finalizarea greoaie a vanzarii sau inchirierii imobilului.
+      </p>
+      <p class="text">
+    In schimb, un agent profesionist te poate ajuta sa iti evaluezi corect proprietatea, o promoveaza eficient, iti poate aduce mai multi clienti, datorita portofoliului bogat pe care il are si te ajuta in negocieri iar finalizarea tranzactiei se va face mult mai repede.
+
+O casa poate deveni “acasa” cu ajutorul unei agentii imobiliare din sectorul 3
+      </p>
+      <p class="text">
+    Visezi la o casa intr-un cartier din sectorul 3 al capitalei? Nu e greu, dar nici usor. Daca apelezi la specialist lucrurile se pot simplifica.  Pentru ca nu orice casa poate deveni “acasa” o agentie imobiliara din sectorul 3 te poate ajuta sa transformi visul in realitate.
+    Daca dorintele tale sunt mai greu de indeplinit si vrei ca viitoarea ta casa sa fie asezata cat mai central, sa fie cat mai spatioasa si intr-o zona exclusivista, cu atat mai mult ai nevoie de ajutor.
+    Un agent imobiliar din sectorul 3 al capitalei va cauta in locul tau casa cea mai potrivita, care poate sa devina caminul tau si al familiei tale.
+    Un expert imobiliar va face tot posibilul pentru a te sfatui si indruma sa faci cea mai buna alegere, la un pret cat mai bun.
+      </p>
+      <p class="text">
+Visezi la o casa spatioasa in Pipera? Ai nevoie de o agentie imobiliara specializata pe zona Pipera
+      </p>
+      <p class="text">
+    Cartierele exclusiviste din Pipera te atrag ca un magnet si ti-ai dori sa ai o locuinta generoasa la marginea Bucurestiului? Agentiile imobiliare din Pipera iti pun la dispozitie nenumarate oferte despre imobile scoase la vanzare, in cele mai exclusiviste cartiere de aici sau informatii despre cele mai bune oferte din aceasta zona.
+    Pentru ca infrastructura nu este in totalitate pusa la punct poti beneficia de cele mai bune oferte la case cu curte, la rosu sau gata finalizate , case mai mari ori mai mici.
+    De asemenea, avalansa de constructii din ultima perioada, de aici este un alt factor care te poate influenta in luarea deciziei.
+    Un agent imobiliar din Pipera iti poate gasi cea mai spatioasa si frumoasa locuinta, in functie de bugetul fiecaruia.
+      </p>
+      <p class="text">
+3 motive ca sa apelezi la serviciile unei Agentii imobiliare in zona Unirii
+      </p>
+      <p class="text">
+Vrei sa vinzi sau sa cumperi un imobil in zona centrala a Bucurestiului? O agentie imobiliara din zona Unirii sau alta zona centrala a capitalei, unde iti doresti sa locuiesti, te poate ajuta sa gasesti usor si rapid casa dorita. Iata ce motive ai:
+      </p>
+      <p class="text">
+    O agentie imobiliara din zona Unirii se va concentra pe serviciile de calitate pe care trebuie sa i le asigure oricarui client
+    Va reprezenta clientul si va depune orice efort pentru indeplinirea obiectivelor acestuia printr-un plan bine pus la punct.
+    Daca inchei un contract cu o agentie imobiliara din zona Unirii, ea va cunoaste toate facilitatile din zona si isi va dedica tot timpul pentru a garanta gasirea locuintei potrivite oricarui client.
+      </p>
+      <p class="text">
+Apeleaza la specialisti si poti scapa astfel de probleme!
+Lista agentii imobiliare Bucuresti
+      </p>
+      <p class="text">
+Oferta de agentii imobiliare de pe piata din capitala este din ce in ce mai mare si mai atragatoare.
+O lista cu mai multe agentii imobiliare, importante din Bucuresti te poate ajuta sa te decizi  mai repede si sa gasesti mai usor ceea ce cauti.
+      </p>
+      <p class="text">
+    Avand mai multe optiuni, poti sa alegi cateva agentii cu recomandari bune sau in pozitii de top.
+    O lista cu cele mai bune agentii imobiliare din Bucuresti, cu care sa colaborezi, se poate concretiza cu succesul garantat si rapid al tranzactiei. Comisionul aferent incheierii tranzactiei va fi oferit agentiei care finalizeaza contractul.
+    In schimb, incheierea unui contract de reprezentare exclusiva cu un singur broker, care isi va doza eforturile pentru  finalizarea tranzactiei, te poate costa uneori mai mult decat in cazul unei reprezentari non-exclusive. Costurile sunt diferite, insa in functie de agentie.
+      </p>
+      <p class="text">
+5 caracteristici ale unei agentii imobiliare de top din Bucuresti
+      </p>
+      <p class="text">
+Agentiile imobiliare si companiile de consultanta sunt intr-o continua intrecere. Din sute de agentii imobiliare prezente pe piata din Bucuresti, doar cateva se situeaza in topul celor mai profitabile, cu cele mai multe tranzactii efectuate.
+      </p>
+      <p class="text">
+Iata care sunt caracteristicile unei agentii imobiliare de top din Bucuresti:
+      </p>
+      <p class="text">
+    Pe primul loc se situeaza reputatia si specializarea pe zona. Este cartea de vizita a oricarei agentii imobiliare de top din Bucuresti. Ca in orice domeniu nu exista „bun la toate” – in general agentiile imobiliare sunt specializate in anumite tipuri de tranzactii imobiliare sau anumite zone.
+    Ofera cele mai bune servicii si trateaza cu loialitate interesul fiecarui client in parte.
+    Are o baza de date de proprietati imobiliare bine structurata si bogata.
+      </p>
+      <p class="text">
+6 atribute ale unei agentii imobiliare din Bucuresti clasate in top 10
+      </p>
+      <p class="text">
+Experienta in domeniu si serviciile complexe si complete, la un nivel profesional sunt atributele principale ale unei companii din top 10 agentii imobiliare Bucuresti. Alte caracteristici mai importante sunt:
+      </p>
+      <p class="text">
+    Ofera cele mai bune servicii de pe piata si multumeste toti clientii cu care intra in contact.
+    Dispune de o echipa de profesionisti care trateaza cu seriozitate nevoile clientilor sai  si ofera servicii demne sa fie  pozitionata in top 10 agentii imobiliare in Bucuresti.
+    Ofera o gama larga de servicii de consultanta si intermediere;
+    Pune la dispozitia clientilor proprietati cat mai diverse, intr-un numar cat mai mare;
+    Este tot timpul la dispozitia clientilor sai;
+    De asemenea, propulsarea in acest clasament poate fi data si de numarul de vizitatori sau de anunturile postate pe site-ul de profil.
+      </p>
+    </div>
+        
+  </body>
+
+</html>
